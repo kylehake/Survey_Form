@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemon Card Survey</title>
+  </head>
+  <body>
+    <div class="header">
+    <h1 id="title">Pokemon Card Collectors Survey</h1>
+    <p id="description">Thank you for taking the time to provide us insight on your Pokemon card collecting history!</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="John Smith" required/></label>
+        <label  id="email-label">Email <input id="email" type="email" placeholder="xyz@gmail.com" required/></label>
+        <label  id="number-label">Age (optional) 
+          <input id="number" type="number" min=15 max=100 placeholder="15"/>
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend>How many years have you been collecting Pokemon cards?</legend>
+        <label for="less-than-one" class="inline">
+          <input type="radio" value="less-than-one" name="num-of-years"/>Less Than 1 Year
+        </label>
+        <label for="one-to-five">
+          <input type="radio" value="one-to-five" name="num-of-years"/>1 to 5 Years
+        </label>
+        <label for="five-to-ten">
+          <input type="radio" value="five-to-ten" name="num-of-years"/>5 to 10 Year
+        </label>
+        <label for="ten-to-twenty">
+          <input type="radio" value="ten-to-twenty" name="num-of-years"/>10 to 20 Years
+        </label>
+        <label for="more-than-twenty">
+          <input type="radio" value="more-than-twenty" name="num-of-years"/>More Than 20 Years
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>Favorite Trading Card Game Mechanic
+          <select id="dropdown" name="dropdown">
+            <option value="">select and option:</option>
+            <option value="1">V / VMax Pokemon</option>
+            <option value="2">Terrastrial Pokemon</option>
+            <option value="3">GX Pokemon</option>
+            <option value="4">ex Pokemon</option>
+            <option value="5">Break Evolutions</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend>Which card sets from the Scarlet and Violet generation have your favorite Pokemon? (select all that apply)</legend>
+        <label value="SV1">
+          <input type="checkbox" value="SV1" checked/>Scarlet and Violet
+        </label>
+        <label value="SV2">
+          <input type="checkbox" value="SV2"/>Scarlet and Violet: Paldea Evolved
+        </label>
+        <label value="SV3">
+          <input type="checkbox" value="SV3"/>Scarlet and Violet: Obsidian Flames
+        </label>
+        <label value="SV3-5">
+          <input type="checkbox" value="SV3-5"/>Scarlet and Violet: Pokemon 151
+        </label>
+        <label value="SV4">
+          <input type="checkbox" value="SV4"/>Scarlet and Violet: Paradox Rift
+        </label>
+        <label value="SV5">
+          <input type="checkbox" value="SV5"/>Scarlet and Violet: Paldean Fates
+        </label>
+        </fieldset>
+        <fieldset>
+        <label id="suggestions">Suggestions?
+          <textarea id="suggestions" rows="3" cols="50"></textarea>
+        </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
